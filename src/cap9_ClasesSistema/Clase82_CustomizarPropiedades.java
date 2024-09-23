@@ -23,7 +23,8 @@ public class Clase82_CustomizarPropiedades {
             System.out.println(System.getProperty("config.puerto.email"));
 
         } catch (Exception e){
-            System.out.println("No se encontro la ruta "+e);
+            System.err.println("No se encontro la ruta "+e);
+            System.exit(1);
         }
 
     }
